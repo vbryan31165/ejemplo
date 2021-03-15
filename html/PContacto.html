@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilocontacto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../Js/Storage.js"></script>
+    <title>Contacto</title>
+  </head>
+  <body onload="doShowAll()">
+    <div class="cont">
+      <div class="meni">
+        <div class="logo">
+          <a href="Pprincipal.html" style="text-decoration: none"
+            ><h1>BJ-Market</h1></a
+          >
+        </div>
+        <div class="menu">
+          <div class="barra_navegador">
+            <ul>
+              <li><a href="Pprincipal.html">INICIO</a></li>
+              <li><a href="POfertas.html">OFERTAS</a></li>
+              <li><a href="PCategorias.html">CATEGORIAS</a></li>
+              <li><a href="PCatalogo.html">CATALOGO</a></li>
+              <li><a href="PAsesoria.html" id="inv">ASESORIA</a></li>
+              <li><a href="PContacto.html">CONTACTO</a></li>
+              <li>
+                <a href="Trabaja_Con_Nosotros.html" id="in"
+                  >TRABAJA CON NOSOTROS</a
+                >
+              </li>
+              <li><a href="PSucursales.html">SUCURSALES</a></li>
+            </ul>
+          </div>
+          <!--fin barar_nav-->
+        </div>
+        <!--fin menu-->
+      </div>
+      <!--fin meni-->
+      <div class="contenido">
+        <div class="banner">
+          <header>
+            <center>
+              <img
+                src="../img/bannerofe.jpg"
+                alt=""
+                width="1000"
+                height="200"
+              />
+            </center>
+          </header>
+          <div class="contenid">
+            <hr />
+            <marquee>CONTACTO</marquee>
+            <hr />
+          </div>
+        </div>
+        <!--banner-->
+        <div class="publicacion">
+          <div class="contac">
+            <center>
+              <h2><em>Contacta con Nosotros</em></h2>
+            </center>
+            <br />
+            <p class="inf">
+              Hola bienvenido a mi pag web, en que podemos ayudarte, no te
+              olvides de dar todos los datos necesarios ademas se muestra alguna
+              informacion basica sobre: Nosotros como contacto, direccion, email
+              etc. Te agradesco que te pases por mi pag, muy pronto estara
+              actualizada buscando la comodidad del usuario.<br />
+              <br /><em>autores: Jose Castrillon & Bryan Villanueva</em><br />
+              <em
+                >contacto: 3007306952 - 3014739559<br />
+                Correos:<br />
+                <strong
+                  >><a
+                    href="mailto: jmcastrillon@itsa.edu.co"
+                    class="email-contacto"
+                    >jmcastrillon@itsa.edu.co</a
+                  ></strong
+                ><br />
+                <strong
+                  >><a
+                    href="mailto: Bryan.31165@gmail.com"
+                    class="email-contacto"
+                    >Bryan.31165@gmail.com</a
+                  ></strong
+                >
+              </em>
+            </p>
+            <br />
+
+            <div id="cuad">
+              <h3>Formulario</h3>
+              <br />
+              <form>
+                <label for="usuario">Usuario: </label>
+                <input type="text" id="usuario" /><br />
+                <label for="tip">Tipo de solicitud:</label><br />
+                <input type="radio" name="tip" id="tip" />Peticiones
+                <input type="radio" name="tip" id="tip" />quejas
+                <input type="radio" name="tip" id="tip" />Reclamos<br />
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" />
+                <input type="time" id="fecha" /><br />
+                <label for="archivo">Captura:</label>
+                <input type="file" /><br />
+                <label for="rango">Nivel de satisfaccion:</label><br />
+                <input
+                  type="range"
+                  name="miRango"
+                  id="rango"
+                  min="0"
+                  max="10"
+                  step="1"
+                /><br />
+                <label for="comen">Comentario:</label><br />
+                <textarea id="comen" cols="30" rows="21"></textarea><br />
+
+                <input class="bo" type="submit" />
+                <input class="bo" type="reset" />
+              </form>
+            </div>
+          </div>
+
+          <div id="name_user">
+            <input
+              class="pnd"
+              type="image"
+              src="../img/cerrar.png"
+              alt=""
+              width="10%"
+              onclick="return cerrar()"
+            />
+            <p class="name" id="dato_usuario"></p>
+          </div>
+          <section class="form-register">
+            <h2>Formulario de registro</h2>
+            <br />
+            <form name="Listas">
+              <label>Nombre</label>
+              <input
+                type="text"
+                placeholder=""
+                id="txtnombre"
+                name="nombre"
+              /><br /><br />
+              <label>Apellido</label>
+              <input
+                type="text"
+                placeholder=""
+                id="txtapellido"
+                name="apellido"
+              /><br /><br />
+              <label>Correo</label>
+              <input
+                type="email"
+                placeholder=""
+                id="txtemail"
+                name="correo"
+              /><br /><br />
+              <label>Numero</label>
+              <input
+                type="number"
+                placeholder=""
+                id="numcelular"
+                name="celular"
+              /><br /><br />
+
+              <label for="tipo">Tipo de cuenta:</label><br />
+              <input type="radio" name="type" id="tipo" />Basico<br />
+              <input type="radio" name="type" id="tipo" />Premium<br />
+              <input type="radio" name="type" id="tipo" />Diamante<br />
+              <label for="opcion">Suscripcion: </label>
+              <select name="opcion" id="option">
+                <option select>1 Mes</option>
+                <option>2 Meses</option>
+                <option>5 Meses</option>
+                <option>10 Meses</option>
+                <option>1 Año</option>
+                <option>2 Años</option></select
+              ><br />
+              <label for="noti">Notificaciones</label><br />
+              <input type="checkbox" name="" id="noti" /> Nuevos productos
+              <input type="checkbox" name="" id="noti" /> Promociones <br />
+              <input type="checkbox" name="" id="noti" /> Descuentos
+              <input type="checkbox" name="" id="noti" /> Black Friday<br /><br />
+
+              <input type="checkbox" name="" id="terminos" /><em>
+                estoy de acuerdo con
+                <a href="#"> Términos y Condiciones </a></em
+              >
+              <br /><br />
+              <div class="bts">
+                <input
+                  class="botons"
+                  type="button"
+                  value="Enviar"
+                  id="btnregistrar"
+                  onclick="Almacenar()"
+                />
+
+                <input class="botons" type="reset" />
+                <p><a href="#">¿No tengo una cuenta?</a></p>
+              </div>
+            </form>
+            <!--form de registro-->
+          </section>
+          <!--.formulario de registro-->
+
+          <div class="mapa">
+            <center>
+              <h1>COMO LLEGAR</h1>
+              <br />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.3970707741365!2d-74.816431870863!3d10.918861716340308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d2fa05fac391%3A0x2c4e1d7507327e57!2sCra.%2019a%20%2380-2%2C%20Soledad%2C%20Barranquilla%2C%20Atl%C3%A1ntico!5e0!3m2!1ses!2sco!4v1598054795457!5m2!1ses!2sco"
+                width="500"
+                height="350"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </center>
+            <br />
+          </div>
+          <!--contenedor mapa-->
+        </div>
+      </div>
+
+      <br /><br /><br /><br />
+      <div id="items_table">
+        <center><h1>Datos registrados</h1></center>
+        <br />
+        <table id="list"></table>
+        <br /><br />
+        <center>
+          <label>
+            <input type="button" value="clear" onclick="ClearAll()" />
+            <i>* Remove all items</i></label
+          >
+        </center>
+      </div>
+
+      <hr />
+      <div class="pie">
+        <footer>
+          <spam style="color: white"
+            >Publicado por Bryan Villanueva & Jose Castrillon <br />
+            ©JCastrillon - BVillanueva - <br />Direccion: kra 29A 80b 10<br />Todos
+            los derechos reservados <br />
+            Se han bienvenidos a nuestra pag web espero y les guste :)</spam
+          >
+        </footer>
+        <a href="https://es-la.facebook.com/">
+          <img src="../img/fb.png" alt="" height="50" width="50"
+        /></a>
+        <a href="https://twitter.com/?lang=es">
+          <img src="../img/tw.png" alt="" height="50" width="50"
+        /></a>
+        <a href="mailto:jmcastrillon@itsa.edu.co">
+          <img src="../img/gm.png" alt="" height="50" width="50"
+        /></a>
+        <a href="https://www.instagram.com/?hl=es">
+          <img src="../img/insta.png" alt="" height="50" width="50"
+        /></a>
+      </div>
+      <!--pie-->
+    </div>
+    <!--cont-->
+  </body>
+  <script src="../Js/inserDiv.js"></script>
+</html>
