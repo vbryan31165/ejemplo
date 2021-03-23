@@ -1,130 +1,254 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estiloAsesoria.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <title>Inicio</title>
+    <title>Asesorias</title>
 </head>
+
 <body>
-    <div class="cont">
-        <div class="meni">
-            
-            <div class="logo">
-               <a href="Pprincipal.html" style="text-decoration:none"><h1>BJ-Market</h1></a>
+
+    <nav class="navbar navbar-expand-lg bg-dark bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../html/Pprincipal.html">JB-Market</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Pprincipal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="POfertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PCategorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PCatalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="PContacto.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="PContacto.html">Contactenos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="PTrabaja_Con_Nosotros.html">Trabaja con nosotros</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="PSucursales.html">Sucursales</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="PAsesoria.html">Asesoria</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="menu">
-                <div class="barra_navegador">       
-                    <ul>
-                       
-                      <li><a href="Pprincipal.html">INICIO</a></li>
-                      <li><a href="POfertas.html">OFERTAS</a></li>
-                      <li><a href="PCategorias.html">CATEGORIAS</a></li>
-                      <li><a href="PCatalogo.html">CATALOGO</a></li>
-                      <li><a href="PAsesoria.html" id="inv"  >ASESORIA</a></li>
-                      <li><a href="PContacto.html">CONTACTO</a></li>
-                      <li><a href="Trabaja_Con_Nosotros.html" id="in">TRABAJA CON NOSOTROS</a></li>
-                      <li><a href="PSucursales.html">SUCURSALES</a></li>
-                   
-                    </ul>
-                   </div><!--fin barar_nav-->
-            </div><!--fin menu-->
-        </div><!--fin meni-->
-        <div class="contenido">
-            <div class="banner">
-                <header>
+        </div>
+    </nav>
 
-                    <center><img src="../img/asesoria.jpg" alt="" width="1333" height="365"></center>
-                    
-               </header>
-               <div class="contenid"><hr><marquee>BIENVENIDOS A NUESTRA TIENDA </marquee><hr> </div>
-            </div><!--banner-->
-            <div id="name_user">
-                <input class="pnd" type="image" src="../img/cerrar.png" alt="" width="10%"  onclick="return cerrar()">
-                <p class="name" id="dato_usuario"></p>               
-                
+    <br><br>
+    <div class="container">
+        <div class="banner">
+            <header>
+
+                <img src="../img/asesoria.jpg" alt="" class="img-fluid">
+
+            </header>
+            <div class="contenid">
+                <hr>
+                <marquee>BIENVENIDOS A NUESTRA TIENDA </marquee>
+                <hr>
             </div>
-            <div class="chatbox">
-                <em>Asesoria: JCastrillon<br>
-                    date: 20/02/2021 22:11
-                </em>
-                <div class="chatlogs">
+        </div>
+        <!--banner-->
 
-                    <div class="chat cliente">
-                        <div class="log">
-                            <img src="../img/ft hombre.jpg" alt="">
-                        </div>
-                        <div class="chat-message">
-                            <p>Perdona, me he dejado el teléfono móvil en el probador, pero he vuelto a entrar y ya no estaba. ¿Sabes si alguien lo ha traído al mostrador?</p>
-                        </div>
+        <div class="row">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-4">
+                <div class="row" id="name_user">
+                    <div class="col-lg-10 text-center pt-2">
+                        <p class="name" id="dato_usuario"></p>
                     </div>
-                    <div class="chat Administrador">
-                        <div class="log">
-                            <img src="../img/ft mujer.jpg" alt="">
-                        </div>
-                        <div class="chat-message">
-                           <p> Que yo sepa no. Es que acaba de empezar mi turno de trabajo.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="chat cliente">
-                        <div class="log">
-                            <img src="../img/ft hombre.jpg" alt="">
-                        </div>
-                        <div class="chat-message">
-                            <p>Perdona, me he dejado el teléfono móvil en el probador, pero he vuelto a entrar y ya no estaba. ¿Sabes si alguien lo ha traído al mostrador?</p>
-                        </div>
-                    </div>
-                    <div class="chat Administrador">
-                        <div class="log">
-                            <img src="../img/ft mujer.jpg" alt="">
-                        </div>
-                        <div class="chat-message">
-                           <p> Que yo sepa no. Es que acaba de empezar mi turno de trabajo.</p>
-                        </div>
-                    </div>
-
-                    <div class="chat cliente">
-                        <div class="log">
-                            <img src="../img/ft hombre.jpg" alt="">
-                        </div>
-                        <div class="chat-message">
-                            <p>Perdona, me he dejado el teléfono móvil en el probador, pero he vuelto a entrar y ya no estaba. ¿Sabes si alguien lo ha traído al mostrador?</p>
-                        </div>
-                    </div>
-                    <div class="chat Administrador">
-                        <div class="log">
-                            <img src="../img/ft mujer.jpg" alt="">
-                        </div>
-                        <div class="chat-message">
-                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod unde quo voluptatum, veritatis dicta tenetur in consectetur non esse at saepe. Culpa, nisi? Facere quisquam qui veritatis consequatur dolores?</p>
-                        </div>
-                    </div>
-
-                 </div>
-                 <div class="chat-form">
-                    <textarea ></textarea>
-                    <button>enviar</button>
-                </div>
+                    <div class="col-lg-2"><input class="img-fluid w-5 h-5" type="image" src="../img/cerrar.png"
+                            onclick="return cerrar()"></div>
                 </div>
             </div>
-        <hr>
-        <div class="pie">
-            <footer><spam style="color: white; ">Publicado por Bryan Villanueva & Jose Castrillon
-                <br> ©JCastrillon - BVillanueva - <br>Direccion: kra 29A 80b 10<br>Todos los derechos reservados <br> Se han bienvenidos a nuestra pag web espero y les guste :)</spam>
+        </div>
+        <br><br>
+        <div class="row " style="border-radius: 10px; background: #f5f0f5;">
+            <em>Asesoria: JCastrillon<br>
+                date: 20/02/2021 22:11
+            </em>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <br>
+                <br>
+                <div style="border-radius: 20px; background: #fffeff;;" class="chatt">
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+
+                            <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-3 align-self-center">
+                                    <img src="../img/ft hombre.jpg" style="
+                                    border-radius: 50%;" class="img-fluid w-75" alt="">
+                                </div>
+                                <div style="border-radius: 20px; background: #1adda4; color: #fff;"
+                                    class="col-lg-8 align-self-center">
+                                    <p>Perdona, me he dejado el teléfono móvil en el probador, pero he vuelto a entrar y
+                                        ya no estaba. ¿Sabes si alguien lo ha traído al mostrador?</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div style="border-radius: 20px; background: #1ddced; color: #fff;"
+                                    class="col-lg-8 align-self-center">
+                                    <p> Que yo sepa no. Es que acaba de empezar mi turno de trabajo.</p>
+                                </div>
+                                <div class="col-lg-3 align-self-center">
+                                    <img style="
+                                    border-radius: 50%;" src="../img/ft hombre.jpg" class="img-fluid  w-75" alt="">
+                                </div>
+                                <div class="col-lg-1"></div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-3 align-self-center">
+                                    <img style="
+                                    border-radius: 50%;" src="../img/ft hombre.jpg" class="img-fluid  w-75" alt="">
+                                </div>
+                                <div style="border-radius: 20px; background: #1adda4; color: #fff;"
+                                    class="col-lg-8 align-self-center">
+                                    <p>Perdona, me he dejado el teléfono móvil en el probador, pero he vuelto a entrar y
+                                        ya no estaba. ¿Sabes si alguien lo ha traído al mostrador?</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div style="border-radius: 20px; background: #1ddced; color: #fff;"
+                                    class="col-lg-8  align-self-center">
+                                    <p> Que yo sepa no. Es que acaba de empezar mi turno de trabajo.</p>
+                                </div>
+                                <div class="col-lg-3 align-self-center">
+                                    <img style="
+                                    border-radius: 50%;" src="../img/ft hombre.jpg" class="img-fluid  w-75" alt="">
+                                </div>
+                                <div class="col-lg-1"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-3 align-self-center">
+                                    <img style="
+                                    border-radius: 50%;" src="../img/ft hombre.jpg" class="img-fluid  w-75" alt="">
+                                </div>
+                                <div style="border-radius: 20px; background: #1adda4; color: #fff;"
+                                    class="col-lg-8 align-self-center">
+                                    <p>Perdona, me he dejado el teléfono móvil en el probador, pero he vuelto a entrar y
+                                        ya no estaba. ¿Sabes si alguien lo ha traído al mostrador?</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div style="border-radius: 20px; background: #1ddced; color: #fff;"
+                                    class="col-lg-8 align-self-center">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod unde
+                                        quo voluptatum, veritatis dicta tenetur in consectetur non esse at saepe. Culpa,
+                                        nisi? Facere quisquam qui veritatis consequatur dolores?</p>
+                                </div>
+                                <div class="col-lg-3 align-self-center">
+                                    <img style="
+                                    border-radius: 50%;" src="../img/ft hombre.jpg" class="img-fluid  w-75" alt="">
+                                </div>
+                                <div class="col-lg-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+
+            <div class="row mt-5">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-7">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"><button class="btn btn-primary">enviar</button></div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+
+            </div>
+
+
+            <br>
+        </div>
+        <!---Aqui-->
+
+    </div>
+    <!---Aqui-->
+    <hr>
+
+    <br><br><br><br>
+    <hr>
+    <div class="row bg-dark">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8">
+            <footer>
+                <spam style="color: white; ">Publicado por Bryan Villanueva & Jose Castrillon
+                    <br> ©JCastrillon - BVillanueva - <br>Direccion: kra 29A 80b 10<br>Todos los derechos reservados
+                    <br> Se han bienvenidos a nuestra pag web espero y les guste :)
+                </spam>
             </footer>
-            <a href="https://es-la.facebook.com/"> <img src="../img/fb.png" alt="" height="50" width="50"></a>
-            <a href="https://twitter.com/?lang=es"> <img src="../img/tw.png" alt="" height="50" width="50"></a>
-            <a href="mailto:jmcastrillon@itsa.edu.co"> <img src="../img/gm.png" alt="" height="50" width="50"></a>
-            <a href="https://www.instagram.com/?hl=es"> <img src="../img/insta.png" alt="" height="50" width="50"></a>
-       
-        </div><!--pie-->
+        </div>
+        <div class="col-lg-3 align-self-center">
+            <div class="row ">
+                <div class="col-lg-3">
+                    <a href="https://es-la.facebook.com/"> <img src="../img/fb.png" alt="" class="img-fluid w-75 "></a>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="https://twitter.com/?lang=es"> <img src="../img/tw.png" alt="" class="img-fluid w-75"></a>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="mailto:jmcastrillon@itsa.edu.co"> <img src="../img/gm.png" alt=""
+                            class="img-fluid w-75"></a>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="https://www.instagram.com/?hl=es"> <img src="../img/insta.png" alt=""
+                            class="img-fluid w-75 "></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pie-->
 
-    </div><!--cont-->
+
 </body>
 <script src="../Js/inserDiv.js"></script>
+<script src="../js/bootstrap.js"></script>
+
 </html>

@@ -1,257 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet" />
     <title>Ofertas</title>
 </head>
+
 <body>
-        
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                <a class="navbar-brand m-2" href="Pprincipal.html">BJ-Market</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="Pprincipal.html">Inicio</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="POfertas.html">Ofertas</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="PCategorias.html">Categorias</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="PCatalogo.html">Catalogo</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="PAsesoria.html">Asesoria</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="PContacto.html">Contacto</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="Trabaja_Con_Nosotros.html">Trabaja con nosotros</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="PSucursales.html">Sucursales</a>
-                        </li>
-        
-                    </ul>
-        
-                </div>
-        
-            </nav>
+    <nav class="navbar navbar-expand-lg bg-dark bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../html/Pprincipal.html">JB-Market</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Pprincipal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="POfertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PCategorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PCatalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="PContacto.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="PContacto.html">Contactenos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="PTrabaja_Con_Nosotros.html">Trabaja con nosotros</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="PSucursales.html">Sucursales</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="PAsesoria.html">Asesoria</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container">
+        <div class="banner">
+            <br />
+            <header>
+                <center><img src="../img/bannerofe.jpg" class="img-fluid" /></center>
+                <hr />
+                <marquee>OFERTAS</marquee>
+                <hr />
+            </header>
+        </div>
+        <!--banner-->
 
-        <div class="container">
-            <div class="banner">
-                <br>
-                <header>
-
-                    <center><img src="../img/bannerofe.jpg" class="img-fluid"></center>
-                    <hr><marquee>OFERTAS</marquee><hr>
-               </header>
-          
-            </div><!--banner-->
-
-            <div class="row">
-                <div class="col-lg-8"></div>
-                <div class="col-lg-4">
-                    <div class="row" id="name_user">
-                        <div class="col-lg-10 bg-danger text-center pt-2"> <p class="name" id="dato_usuario"></p> </div>
-                        <div class="col-lg-2 bg-dark"><input class="img-fluid w-5 h-5" type="image" src="../img/cerrar.png"   onclick="return cerrar()"></div>                  
+        <div class="row">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-4">
+                <div class="row" id="name_user">
+                    <div class="col-lg-10 text-center pt-2">
+                        <p class="name" id="dato_usuario"></p>
+                    </div>
+                    <div class="col-lg-2">
+                        <input class="img-fluid w-5 h-5" type="image" src="../img/cerrar.png"
+                            onclick="return cerrar()" />
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="publicacion">
-                <section class="public">
-                    <h1>Tipos de descuento</h1><br><p>
-                        Es llevar la estrategia anterior un poco más allá, ahora combinamos la limitación en tiempo y producto.
-                        Por ejemplo: las 15 primeras unidades con un 40% de descuento, las siguientes 25, con un 60%…La oferta sube con cada bloque y todo en un determinado periodo de tiempo.</p>
-                            <br>
-                    <br>
-                    <div class="lista">
-                    <h1>Descuentos</h1>
-                    <br>
+        <div style="text-align: justify" class="row">
+            <section class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-6">Tipos de descuento</h1>
+                        <br />
+                        <p>
+                            Es llevar la estrategia anterior un poco más allá, ahora
+                            combinamos la limitación en tiempo y producto. Por ejemplo: las
+                            15 primeras unidades con un 40% de descuento, las siguientes 25,
+                            con un 60%…La oferta sube con cada bloque y todo en un
+                            determinado periodo de tiempo.
+                        </p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <br />
+                <div class="lista">
+                    <h1 class="display-6">Descuentos</h1>
+                    <br />
                     <ol>
-                        <li>Lunes-5% </li>
+                        <li>Lunes-5%</li>
                         <li>Licoleres-10%</li>
                         <li>Martes -8%</li>
                         <li>Verduras -15%</li>
                         <li>Miercoles -9%</li>
                         <li>Granos-12%</li>
-                        <li>Jueves -25%</li>  
+                        <li>Jueves -25%</li>
                         <li>Lacteos- 4%</li>
                         <li>Black Friday 50%</li>
                         <li>Productos para el aseo - 2x1</li>
                     </ol>
+                </div>
+                <img src="../img/black_friday.png" />
+                <br /><br />
+                <p>
+                    <em>¡No te olvides de las ofertas del Black Friday!</em>, donde
+                    obtienes hasta el 50% de descuento en bebidas, granos, y el 60% en
+                    lacteos
+                </p>
+                <br />
+                <h1 class="display-6">Productos en oferta</h1>
+                <table class="table table-info table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Descuento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Paca de arroz</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Aceite</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Leche</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Salmon</td>
+                            <td>8%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Carne</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Carne de cerdo</td>
+                            <td>8%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <h1 class="display-6">Licores en oferta</h1>
+                <table class="table table-info table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Descuento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Ron la Hechicera</td>
+                            <td>6%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Aguardiente Mil Demonios</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Vino Marquez de silla de Leyva</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Ron Parce</td>
+                            <td>3%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br /><br />
+
+                <p>
+                    Me todos de pago, Paypal, Bitcoin, Litecoin, Efecty, Gana, y
+                    targetas electronicas (Visa,Mastercard, Daviplata). con los cuales
+                    obtienes hasta 0.02% de tu compra.
+                </p>
+                <br />
+                <img src="../img/oferta.png" />
+            </section>
+
+            <div class="col-lg-5">
+                <br /><br />
+                <h1>Calculadora:</h1>
+                <br /><br />
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="../img/coti.png" class="img-fluid" alt="" srcset="" />
                     </div>
-                    <img src="../img/black_friday.png">
-                    <br>
-               <p><em>¡No te olvides de las ofertas del Black Friday!</em>, donde obtienes hasta el 50% de descuento en bebidas, granos, y el 60% en lacteos</p>
-                        
-               <br>
-               <div class="Ta">
-                   <h1>Productos en oferta</h1>
-                <table id="tabla_1" border="">
-                    <tr>
-            
-                    <th>Producto</th>
-                    <th>%</th>           
-                    </tr>
-                    
-                    <tr>
-            
-                        <td>Paca de arroz</td>
-                        <td>5%</td>      
-                         
-                    </tr>
-                    <tr>
-                        <td>Aceite</td>
-                        <td>10%</td>
-                    </tr>
-                    <tr>
-            
-                        <td>Leche</td>
-                        <td>3%</td>      
-                         
-                    </tr>
-                    <tr>
-                        <td>Salmon</td>
-                        <td>8%</td>
-                    </tr>
-                    <tr>
-            
-                        <td>Carne</td>
-                        <td>4%</td>      
-                         
-                    </tr>
-                    <tr>
-                        <td>Carne de cerdo</td>
-                        <td>8%</td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="Ta">
-                <h1>Licores en oferta</h1>
-                <table id="tabla_1" border="">
-                    <tr>
-            
-                    <th>Producto</th>
-                    <th>%</th>           
-                    </tr>
-                    
-                    <tr>
-            
-                        <td>Ron la Hechicera</td>
-                        <td>6%</td>      
-                         
-                    </tr>
-                    <tr>
-                        <td>Aguardiente Mil Demonios</td>
-                        <td>10%</td>
-                    </tr>
-                    <tr>
-            
-                        <td>Vino Marquez de silla de Leyva</td>
-                        <td>2%</td>      
-                         
-                    </tr>
-                    <tr>
-                        <td>Ron Parce</td>
-                        <td>3%</td>
-                    </tr>
-                </table>
-            </div>
-            <br><br>
-                
-                <p>Me todos de pago, Paypal, Bitcoin, Litecoin, Efecty, Gana, y targetas electronicas (Visa,Mastercard, Daviplata). con los cuales obtienes hasta 0.02% de tu compra.</p>
-                 <br>
-                <img src="../img/oferta.png">
-                </section>
-               
-                
-
-
-                <div class="pedidos">
-                    <h1>Calculadora: </h1>
-
-                    <div class="for_cot">
-                        <img src="../img/coti.png" class="coti" alt="" srcset="">
+                    <div class="col-lg-9">
                         <form id="miForm" action="" name="fomulario_inp">
-                            <label for="txt_prod">Numero 1 :</label>
-                            <input type="text" id="txtnume1">
-                            <br><br>
-                            <label for="txtcant">Numero 2 :</label>
-                            <input type="text" id="txtnume2"><br><br>
-                            <input type="radio" id="suma">Suma
-                            <input type="radio" id="resta">Resta
-                            <input type="radio" id="multiplicacion">Multiplicacion
-                            <input type="radio" id="division">division <br><br>
-                           
-                            <center>
-                                <input type="button" value="Enviar" id="btnagregar" onclick="procesar()">
-                                <input type="button" value="Actualizar" id="btneditar" onclick="actualizarfila()">
-                            </center>
-                        </form>
-                    </div>
+                            <label for="txt_prod" class="form-label">Numero 1 :</label>
+                            <input type="text" id="txtnume1" class="form-control" />
+                            <label for="txtcant" class="form-label">Numero 2 :</label>
+                            <input type="text" id="txtnume2" class="form-control" /><br />
+                            <input type="radio" name="op" class="form-check-input" id="suma" />
+                            Suma <br />
+                            <input type="radio" name="op" class="form-check-input" id="resta" />
+                            Resta <br />
+                            <input type="radio" name="op" class="form-check-input" id="multiplicacion" />
+                            Multiplicacion <br />
+                            <input type="radio" name="op" class="form-check-input" id="division" />
+                            division <br /><br />
 
-                    <div class="cuadro ">
-                        <h1>Registros: </h1>
-                        <div id="res">
-                            <table id="tbPorcentaje" border="4" class="">
-                                <tr><th>ID</th> 
-                                    <th>Numero 1</th>
-                                    <th>Numero 2</th>
-                                    <th>Resultado</th>
-                                    <th><center>Opción</center></th>
-                                </tr>
-                            </table>
-                            <!---Aqui va la tabla-->
-                            
-                        </div>
+                            <div class="text-center">
+                                <input type="button" class="btn btn-primary" value="Enviar" id="btnagregar"
+                                    onclick="procesar()" />
+                                <input type="button" class="btn btn-danger" value="Actualizar" id="btneditar"
+                                    onclick="actualizarfila()" />
+                            </div>
+                        </form>
                     </div>
                 </div>
 
-
-
-
-
-
+                <div class="row cuadro">
+                    <h1>Registros:</h1>
+                    <div id="res">
+                        <table id="tbPorcentaje" border="4" class="table table-striped">
+                            <tr>
+                                <th>ID</th>
+                                <th>Numero 1</th>
+                                <th>Numero 2</th>
+                                <th>Resultado</th>
+                                <th>
+                                    <center>Opción</center>
+                                </th>
+                            </tr>
+                        </table>
+                        <!---Aqui va la tabla-->
+                    </div>
+                </div>
             </div>
-
         </div>
-<br><br><br><br>
-        <hr>
-        <div class="pie">
-            <footer><spam style="color: white; ">Publicado por Bryan Villanueva & Jose Castrillon
-                <br> ©JCastrillon - BVillanueva - <br>Direccion: kra 29A 80b 10<br>Todos los derechos reservados <br> Se han bienvenidos a nuestra pag web espero y les guste :)</spam>
+    </div>
+    <br /><br /><br /><br />
+    <hr />
+    <div class="row bg-dark">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8">
+            <footer>
+                <spam style="color: white">Publicado por Bryan Villanueva & Jose Castrillon <br />
+                    ©JCastrillon - BVillanueva - <br />Direccion: kra 29A 80b 10<br />Todos
+                    los derechos reservados <br />
+                    Se han bienvenidos a nuestra pag web espero y les guste :)</spam>
             </footer>
-            <a href="https://es-la.facebook.com/"> <img src="../img/fb.png" alt="" height="50" width="50"></a>
-            <a href="https://twitter.com/?lang=es"> <img src="../img/tw.png" alt="" height="50" width="50"></a>
-            <a href="mailto:jmcastrillon@itsa.edu.co"> <img src="../img/gm.png" alt="" height="50" width="50"></a>
-            <a href="https://www.instagram.com/?hl=es"> <img src="../img/insta.png" alt="" height="50" width="50"></a>
-       
-        </div><!--pie-->
-
-
+        </div>
+        <div class="col-lg-3 align-self-center">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="https://es-la.facebook.com/">
+                        <img src="../img/fb.png" alt="" class="img-fluid w-75" /></a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://twitter.com/?lang=es">
+                        <img src="../img/tw.png" alt="" class="img-fluid w-75" /></a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="mailto:jmcastrillon@itsa.edu.co">
+                        <img src="../img/gm.png" alt="" class="img-fluid w-75" /></a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://www.instagram.com/?hl=es">
+                        <img src="../img/insta.png" alt="" class="img-fluid w-75" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pie-->
 </body>
 <script src="../Js/inserDiv.js"></script>
 <script src="../Js/oferta.js"></script>
+
 </html>
