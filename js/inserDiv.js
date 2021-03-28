@@ -2,7 +2,7 @@ miespacio = window.localStorage;
 var activo_usern = miespacio.getItem('nomb');
 var activo_usera = miespacio.getItem('apel');
 var activo_usert = miespacio.getItem('tip');
-document.getElementById('dato_usuario').innerHTML = '<b>Bienvenido </b>'+activo_usern+" "+activo_usera;
+document.getElementById('dato_usuario').innerHTML ='<img class="img-fluid w-1 h-2 " src="../img/cerra.svg" alt="" srcset="">'+activo_usern+" "+activo_usera;
 
 //fin------------------------------------------------
 

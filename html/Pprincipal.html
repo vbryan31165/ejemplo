@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg bg-dark bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../html/Pprincipal.html">JB-Market</a>
@@ -56,6 +55,11 @@
                         </ul>
                     </li>
                 </ul>
+                <li class="nav-item position-absolute bottom-0 end-0">
+                    <a class="nav-link" href="#" onclick="return cerrar()">
+                        <p class="name" id="dato_usuario"></p>
+                    </a>
+                </li>
             </div>
         </div>
     </nav>
@@ -76,21 +80,6 @@
                 <hr />
                 <marquee>BIENVENIDO A NUESTRA TIENDA</marquee>
                 <hr />
-            </div>
-        </div>
-
-        <div class="row align-self-center">
-            <div class="col-lg-8"></div>
-            <div class="col-lg-4">
-                <div class="row" id="name_user">
-                    <div class="col-lg-10 text-center pt-2">
-                        <p class="name" id="dato_usuario"></p>
-                    </div>
-                    <div class="col-lg-2">
-                        <input class="img-fluid w-5 h-5" type="image" src="../img/cerrar.png"
-                            onclick="return cerrar()" />
-                    </div>
-                </div>
             </div>
         </div>
         <br /><br />
@@ -195,39 +184,42 @@
             </div>
         </div>
     </div>
-    <div class="row bg-dark">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-8">
-            <footer>
-                <spam style="color: white">Publicado por Bryan Villanueva & Jose Castrillon <br />
-                    ©JCastrillon - BVillanueva - <br />Direccion: kra 29A 80b 10<br />Todos
-                    los derechos reservados <br />
-                    Se han bienvenidos a nuestra pag web espero y les guste :)
-                </spam>
-            </footer>
-        </div>
-        <div class="col-lg-3 align-self-center">
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="https://es-la.facebook.com/">
-                        <img src="../img/fb.png" alt="" class="img-fluid w-75" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://twitter.com/?lang=es">
-                        <img src="../img/tw.png" alt="" class="img-fluid w-75" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="mailto:jmcastrillon@itsa.edu.co">
-                        <img src="../img/gm.png" alt="" class="img-fluid w-75" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://www.instagram.com/?hl=es">
-                        <img src="../img/insta.png" alt="" class="img-fluid w-75" /></a>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-lg-1 col-1"></div>
+            <div class="col-lg-8 col-12">
+                <p style="color: white">Publicado por Bryan Villanueva y Jose Castrillon <br> ©JCastrillon - BVillanueva
+                    <br>
+                    Direccion: kra 29A 80b 10 <br> Todos
+                    los derechos reservados <br>
+                    Se han bienvenidos a nuestra pag web espero y les guste
+                </p>
+
+            </div>
+            <div class="col-lg-3 col-12 align-self-center">
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 col-3">
+                        <a href="https://es-la.facebook.com/">
+                            <img src="../img/fb.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
+                    <div class="col-lg-3  col-3">
+                        <a href="https://twitter.com/?lang=es">
+                            <img src="../img/tw.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
+                    <div class="col-lg-3  col-3">
+                        <a href="mailto:jmcastrillon@itsa.edu.co">
+                            <img src="../img/gm.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
+                    <div class="col-lg-3  col-3">
+                        <a href="https://www.instagram.com/?hl=es">
+                            <img src="../img/insta.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--pie-->
+
 </body>
 <script src="../Js/inserDiv.js"></script>
 

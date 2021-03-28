@@ -54,6 +54,11 @@
                         </ul>
                     </li>
                 </ul>
+                <li class="nav-item position-absolute bottom-0 end-0">
+                    <a class="nav-link" href="#" onclick="return cerrar()">
+                        <p class="name" id="dato_usuario"></p>
+                    </a>
+                </li>
             </div>
         </div>
     </nav>
@@ -69,22 +74,6 @@
             </header>
         </div>
         <!--banner-->
-
-        <div class="row">
-            <div class="col-lg-8"></div>
-            <div class="col-lg-4">
-                <div class="row" id="name_user">
-                    <div class="col-lg-10 text-center pt-2">
-                        <p class="name" id="dato_usuario"></p>
-                    </div>
-                    <div class="col-lg-2">
-                        <input class="img-fluid w-5 h-5" type="image" src="../img/cerrar.png"
-                            onclick="return cerrar()" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div style="text-align: justify" class="row">
             <section class="col-lg-7">
                 <div class="row">
@@ -119,7 +108,7 @@
                         <li>Productos para el aseo - 2x1</li>
                     </ol>
                 </div>
-                <img src="../img/black_friday.png" />
+                <img src="../img/black_friday.png" class="img-fluid" />
                 <br /><br />
                 <p>
                     <em>¡No te olvides de las ofertas del Black Friday!</em>, donde
@@ -171,7 +160,7 @@
                 </table>
                 <br />
                 <h1 class="display-6">Licores en oferta</h1>
-                <table class="table table-info table-striped">
+                <table class="table table-success table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -211,7 +200,7 @@
                     obtienes hasta 0.02% de tu compra.
                 </p>
                 <br />
-                <img src="../img/oferta.png" />
+                <img src="../img/oferta.png" class="img-fluid" />
             </section>
 
             <div class="col-lg-5">
@@ -220,7 +209,8 @@
                 <br /><br />
                 <div class="row">
                     <div class="col-lg-3">
-                        <img src="../img/coti.png" class="img-fluid" alt="" srcset="" />
+                        <img src="../img/coti.png" class="img-fluid hidden-xs (only) = d-none d-sm-block (same as hidden-xs-down)
+                        " alt="" srcset="" />
                     </div>
                     <div class="col-lg-9">
                         <form id="miForm" action="" name="fomulario_inp">
@@ -247,7 +237,7 @@
                     </div>
                 </div>
 
-                <div class="row cuadro">
+                <div class="row table-responsive">
                     <h1>Registros:</h1>
                     <div id="res">
                         <table id="tbPorcentaje" border="4" class="table table-striped">
@@ -267,40 +257,40 @@
             </div>
         </div>
     </div>
-    <br /><br /><br /><br />
-    <hr />
-    <div class="row bg-dark">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-8">
-            <footer>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-9 col-12">
                 <spam style="color: white">Publicado por Bryan Villanueva & Jose Castrillon <br />
                     ©JCastrillon - BVillanueva - <br />Direccion: kra 29A 80b 10<br />Todos
                     los derechos reservados <br />
-                    Se han bienvenidos a nuestra pag web espero y les guste :)</spam>
-            </footer>
-        </div>
-        <div class="col-lg-3 align-self-center">
-            <div class="row">
-                <div class="col-lg-3">
-                    <a href="https://es-la.facebook.com/">
-                        <img src="../img/fb.png" alt="" class="img-fluid w-75" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://twitter.com/?lang=es">
-                        <img src="../img/tw.png" alt="" class="img-fluid w-75" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="mailto:jmcastrillon@itsa.edu.co">
-                        <img src="../img/gm.png" alt="" class="img-fluid w-75" /></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://www.instagram.com/?hl=es">
-                        <img src="../img/insta.png" alt="" class="img-fluid w-75" /></a>
+                    Se han bienvenidos a nuestra pag web espero y les guste :)
+                </spam>
+
+            </div>
+            <div class="col-lg-2 col-12 align-self-center">
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 col-3">
+                        <a href="https://es-la.facebook.com/">
+                            <img src="../img/fb.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
+                    <div class="col-lg-3  col-3">
+                        <a href="https://twitter.com/?lang=es">
+                            <img src="../img/tw.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
+                    <div class="col-lg-3  col-3">
+                        <a href="mailto:jmcastrillon@itsa.edu.co">
+                            <img src="../img/gm.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
+                    <div class="col-lg-3  col-3">
+                        <a href="https://www.instagram.com/?hl=es">
+                            <img src="../img/insta.png" alt="" class="img-fluid w-75" /></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--pie-->
 </body>
 <script src="../Js/inserDiv.js"></script>
 <script src="../Js/oferta.js"></script>
